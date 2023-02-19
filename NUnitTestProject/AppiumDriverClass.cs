@@ -33,7 +33,18 @@ namespace NUnitTestProject
 
             var options = new AppiumOptions();
             //options.AddAdditionalCapability("app", @"C:\Windows\notepad.exe");
-            options.AddAdditionalCapability("app", @"C:\Users\ddosen\Downloads\loto.exe");
+            options.AddAdditionalCapability("app", @"C:\Users\draga\OneDrive\Desktop\loto.exe");
+            //sessionCalc = new WindowsDriver<WindowsElement>(
+            return new WindowsDriver<WindowsElement>(
+             new Uri("http://127.0.0.1:4723"), options);
+        }
+
+        public WindowsDriver<WindowsElement> Initializenotepad()
+        {
+
+            var options = new AppiumOptions();
+            options.AddAdditionalCapability("app", @"C:\Windows\notepad.exe");
+            //options.AddAdditionalCapability("app", @"C:\Users\draga\OneDrive\Desktop\loto.exe");
             //sessionCalc = new WindowsDriver<WindowsElement>(
             return new WindowsDriver<WindowsElement>(
              new Uri("http://127.0.0.1:4723"), options);

@@ -95,12 +95,6 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.Given("I launch the Windows calculator application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 9
- testRunner.Given("I add new numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 11
- testRunner.Given("I add multiple numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 13
  testRunner.Given("I divide two numbers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
@@ -230,6 +224,30 @@ this.ScenarioInitialize(scenarioInfo);
                 this.ScenarioStart();
 #line 41
  testRunner.Given("Given I launch the Windows loto application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("06)something with notepad app")]
+        public void _06SomethingWithNotepadApp()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06)something with notepad app", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 42
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 43
+ testRunner.Given("Given I launch the Windows notepad application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             }
             this.ScenarioCleanup();
