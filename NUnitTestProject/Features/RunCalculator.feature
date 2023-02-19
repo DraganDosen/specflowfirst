@@ -6,9 +6,9 @@ A short summary of the feature
 Scenario: 01)Run the calculator
 	Given I launch the Windows calculator application
 
-	Given I add new numbers
+	
 
-	Given I add multiple numbers
+	
 
 	Given I divide two numbers
 	Scenario:02) x multiple with x
@@ -39,4 +39,5 @@ Examples:
 	| 65           | 9             | 74              |
 	Scenario: 05)something with other app
 	Given Given I launch the Windows loto application
-	
+	Scenario: 06)something with notepad app
+	Given Given I launch the Windows notepad application

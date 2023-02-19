@@ -138,12 +138,12 @@ namespace NUnitTestProject.Steps
 
         {
             driver = appiumdriver.Initializeappium(); Thread.Sleep(2000);
-            driver.FindElementByName("Two").Click();
-            driver.FindElementByName("Two").Click();
-            driver.FindElementByName("Divide by").Click();
-            driver.FindElementByName("Two").Click();
-            driver.FindElementByName("Equals").Click();
-            var calculatorResult = driver.FindElementByAccessibilityId("CalculatorResults").Text.Replace("Display is", string.Empty).Trim();
+            driver.FindElementByName("Dva").Click();
+            driver.FindElementByName("Dva").Click();
+            driver.FindElementByName("Deli").Click();
+            driver.FindElementByName("Dva").Click();
+            driver.FindElementByName("Jednako").Click();
+            var calculatorResult = driver.FindElementByAccessibilityId("CalculatorResults").Text.Replace("Prikaz je", string.Empty).Trim();
             Assert.That(calculatorResult, Is.EqualTo("11"));
             driver.CloseApp();
         }
@@ -151,13 +151,21 @@ namespace NUnitTestProject.Steps
         public void GivenExponent()
         {
             driver = appiumdriver.Initializeappium(); Thread.Sleep(2000);
-            driver.FindElementByName("Two").Click();
-            driver.FindElementByName("Two").Click();
-            driver.FindElementByName("Square").Click();
-            var calculatorResult = driver.FindElementByAccessibilityId("CalculatorResults").Text.Replace("Display is", string.Empty).Trim();
+            driver.FindElementByName("Dva").Click();
+            driver.FindElementByName("Dva").Click();
+            driver.FindElementByName("Kvadrat").Click();
+            var calculatorResult = driver.FindElementByAccessibilityId("CalculatorResults").Text.Replace("Prikaz je", string.Empty).Trim();
             Assert.That(calculatorResult, Is.EqualTo("484"));
             driver.CloseApp();
         }
+        [Given(@"Given I launch the Windows notepad application")]
+        public void GivenGivenILaunchTheWindowsNotepadApplication()
+        {
+
+
+            driver = appiumdriver.Initializenotepad(); Thread.Sleep(2000);
+        }  
+
         [Given(@"Given I launch the Windows loto application")]
         public void GivenGivenILaunchTheWindowsLotoApplication()
         {
