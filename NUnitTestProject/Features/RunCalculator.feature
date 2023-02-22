@@ -37,6 +37,8 @@ Examples:
 	| 66           | 1             | 67             |
 	| 23            | 2            | 25              |
 	| 65           | 9             | 74              |
+	| 1         | 9             | 10            |
+	| 2        | 9             | 12             |
 	Scenario: 05)something with other app
 	Given Given I launch the Windows loto application
 	Scenario: 06)something with notepad app
