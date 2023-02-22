@@ -18,5 +18,9 @@ namespace NUnitTestProject
         {
             return FirstNumber - SecondNumber;
         }
+        public int Multiple()
+        {
+            return FirstNumber * SecondNumber;
+        }
     }
 }

@@ -14,8 +14,24 @@ Scenario: 01)Run the calculator
 	Scenario:02) x multiple with x
 
 
+
 Given I launch the Windows calculator application
 Given exponent
+Scenario Outline: 09)Multiple two numbers permutations
+	Given the first number is <First number>
+	And the second number is <Second number>
+	When the two numbers are multipled
+	Then the result should be <Expected result>
+
+Examples:
+	| First number | Second number | Expected result |
+	| 0            | 0             | 0               |
+	| -1           | 10            | -20           |
+	| 6            | 9             | 54           |
+	| 60            | 9             | 540             |
+	
+	| 23            | 2            | 46           |
+	
 Scenario: 03)something other with calculator
 	Given the first number is 70
 	And the second number is 60
