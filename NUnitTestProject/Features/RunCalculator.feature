@@ -41,4 +41,4 @@ Examples:
 	Given Given I launch the Windows loto application
 	Scenario: 06)something with notepad app
 	Given Given I launch the Windows notepad application
-	Scenario: 07)something different from git
+	Scenario: 08)something different from git
