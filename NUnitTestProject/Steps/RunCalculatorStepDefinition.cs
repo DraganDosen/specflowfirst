@@ -69,6 +69,12 @@ namespace NUnitTestProject.Steps
         {
             _result = _calculator.Add();
         }
+        [When(@"the two numbers are multipled")]
+        public void WhenTheTwoNumbersAreMultipled()
+        {
+            _result = _calculator.Multiple();
+        }
+
 
         //driver = appiumdriver.Initializeappium();
 
